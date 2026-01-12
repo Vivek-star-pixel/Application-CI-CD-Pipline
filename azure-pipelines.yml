@@ -1,5 +1,5 @@
 trigger: none 
-pool: Default
+pool: vky
 
 steps: 
 - task: PowerShell@2
