@@ -9,14 +9,20 @@ steps:
     force32bit: true
 
 - task: PowerShell@2
+  displayName: NPM install
   inputs:
     targetType: 'inline'
     script: 'npm install'
 
 
 - task: PowerShell@2
+  displayName: NPM Build
   inputs:
     targetType: 'inline'
     script: 'npm run build'
 
-    
+- task: PublishBuildArtifacts@1
+  displayName: Publish Artifact
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/build'
+    ArtifactName: 'frontend-build'    
