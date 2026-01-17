@@ -29,9 +29,6 @@ steps:
 
 - task: DownloadPipelineArtifact@2
   inputs:
-    buildType: 'specific'
-    project: 'c9f16da6-3fc8-4741-be92-95f9503cbc26'
-    definition: '5'
-    buildVersionToDownload: 'latest'
+    buildType: 'current'
     artifactName: 'todo-kamal'
     targetPath: '$(System.DefaultWorkingDirectory)/build'
