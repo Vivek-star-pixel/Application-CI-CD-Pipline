@@ -30,5 +30,5 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: 'todo-kamal'
+    artifactName: 'frontend-build'
     targetPath: '$(System.DefaultWorkingDirectory)/build'
