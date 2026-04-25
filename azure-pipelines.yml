@@ -1,5 +1,5 @@
 trigger: none 
-pool: vky
+pool: #vky
 
 steps: 
 - task: NodeTool@0
